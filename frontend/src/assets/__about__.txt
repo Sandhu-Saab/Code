@@ -1,0 +1,9 @@
+This asset folder includes the files related to styling like logos, global.css, or non-js files
+
+What I mean for non-js files:
+    - Files that you want to style and use for your whole project like global.css and logos
+    - DO NOT include small .css files that tie to other components here
+        Note: All the styling currently is done directly into the files itselfs
+    
+
+Other than that, this assets folder should not be change (for now)

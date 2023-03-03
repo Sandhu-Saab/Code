@@ -1,0 +1,6 @@
+This is where all of the pages that you go through in our app are. It is catergorized into different folders
+
+What I meant by go through pages: 
+    - You go to login -> that's one page
+    - You go to Create Account -> that's one page
+    - Etc. 

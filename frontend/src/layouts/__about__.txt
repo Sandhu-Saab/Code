@@ -1,0 +1,4 @@
+This is where all the layout of the page files are.
+
+Things like navigation bars, sidebars, etc.
+
