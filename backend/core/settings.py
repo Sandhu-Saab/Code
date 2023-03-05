@@ -50,7 +50,10 @@ INSTALLED_APPS = [
     'incidents',
     'problems',
     'changes',
-    'priority'
+    'priority',
+    'export',
+    
+    
 ]
 
 MIDDLEWARE = [
@@ -88,23 +91,16 @@ WSGI_APPLICATION = 'core.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-# DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#        'NAME': 'pixell_river',
-#        'USER': 'pixell_river_admin',
-#        'PASSWORD': 'admin123',
-#        'HOST': 'localhost',
-#        'PORT': '5432',
-#    }
-# }
-
 DATABASES = {
-	'default': {
-		'ENGINE': 'django.db.backends.sqlite3',
-		'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-		}
-	}
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'test',
+        'USER': 'postgres',
+        'PASSWORD': 'root',
+        'HOST': 'localhost',
+        'PORT': '5432',
+    }
+}
 
 
 

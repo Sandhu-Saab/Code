@@ -32,14 +32,15 @@ const dataTypes=[
     'Changes',
     'Users'
   ];
-const sec =[ 'All' , 'FTE-01', 'FTE-02', 'FTE-03'];
+// const sec =[ 'All' , 'FTE-01', 'FTE-02', 'FTE-03'];
 const status= [  'Any' ,'Resolved' , 'Unresolved'];
 const useType =[ 
     'All',
-    'Student 1',
-    'Student 2',
-    'Instructor 1',
-    'Admin 1',
+    'Admin',
+    'Technician',
+    'Instructor',
+    'Student',
+    'Dummy',
  ];
 
 
@@ -74,6 +75,27 @@ function ExportDataForm() {
     let token = sessionStorage.getItem("access");
 
 
+const [sec, setsec] = useState([])
+useEffect(() => {
+    getProblems()
+}, [])
+
+function getProblems() {
+    axios({
+    method: "GET",
+    url: "/api/get-sections/",
+    headers: {
+        "Content-Type": "application/json",
+    },
+    })
+    .then((response) => {
+        console.log(response?.data?.data)
+        setsec(response?.data?.data)
+    })
+    .catch((error) => {
+        
+    });
+}
   
 
     /**

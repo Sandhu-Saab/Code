@@ -29,7 +29,7 @@ from django.urls import reverse
 
 """Cheatsheet for roleId
 
-1: Admin
+1: Admin  
 2: Technician
 3: Instructor
 4: Student
